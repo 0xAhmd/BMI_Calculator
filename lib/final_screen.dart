@@ -34,27 +34,27 @@ class FinalScreen extends StatelessWidget {
                   "Gender : ${isMale ? "MALE" : "FEMALE"}",
                   style: const TextStyle(
                     color: Colors.white,
-                    fontSize: 20,
+                    fontSize: 25,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
                 Text("Age : $age",
                     style: const TextStyle(
                         color: Colors.white,
-                        fontSize: 20,
+                        fontSize: 25,
                         fontWeight: FontWeight.bold)),
                 Text(
                   "height : ${height.round()}",
                   style: const TextStyle(
                       color: Colors.white,
-                      fontSize: 20,
+                      fontSize: 25,
                       fontWeight: FontWeight.bold),
                 ),
                 Text(
                   "Result : $roundedBmi",
                   style: const TextStyle(
                       color: Colors.white,
-                      fontSize: 20,
+                      fontSize: 25,
                       fontWeight: FontWeight.bold),
                 ),
               ],
