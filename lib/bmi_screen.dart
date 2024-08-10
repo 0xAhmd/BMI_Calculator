@@ -30,8 +30,6 @@ class bmi_screen extends StatelessWidget {
 
         ],
 
-        //var bmi = weight / pow(height, 2);
-        // print (bmi.round());
       ),
     );
   }

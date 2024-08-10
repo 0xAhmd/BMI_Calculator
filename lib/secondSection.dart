@@ -59,7 +59,6 @@ class _secondSectionState extends State<secondSection> {
               value: height,
               min: 120.0,
               max: 240.0,
-              // ignore: avoid_print
               onChanged: (value) => setState(() => height = value),
             ),
           ]),
