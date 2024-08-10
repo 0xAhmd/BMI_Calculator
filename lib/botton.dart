@@ -1,3 +1,4 @@
+import 'package:bmi_calc/final_screen.dart';
 import 'package:flutter/material.dart';
 
 class Botton extends StatelessWidget {
@@ -13,7 +14,8 @@ class Botton extends StatelessWidget {
         borderRadius: BorderRadius.circular(10),
       ),
       child: MaterialButton(
-        onPressed: () {},
+        onPressed: () => Navigator.push(context,
+            MaterialPageRoute(builder: (context) => const FinalScreen())),
         color: Colors.red,
         child: const Text(
           'Calculate',

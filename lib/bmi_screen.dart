@@ -20,12 +20,19 @@ class bmi_screen extends StatelessWidget {
         ),
         centerTitle: true,
       ),
-      body: const Column(children: [
-        FirstSection(),
-        secondSection(),
-        ThirdSection(),
-        Botton(),
-      ]),
+      body: const Column(
+        children: [
+          FirstSection(),
+          secondSection(),
+          ThirdSection(),
+          Botton(),
+          
+
+        ],
+
+        //var bmi = weight / pow(height, 2);
+        // print (bmi.round());
+      ),
     );
   }
 }

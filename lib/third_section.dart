@@ -1,3 +1,4 @@
+import 'package:bmi_calc/importants.dart';
 import 'package:flutter/material.dart';
 
 class ThirdSection extends StatefulWidget {
@@ -8,8 +9,6 @@ class ThirdSection extends StatefulWidget {
 }
 
 class _ThirdSectionState extends State<ThirdSection> {
-  int counter1 = 50;
-  int counter2 = 20;
   @override
   Widget build(BuildContext context) {
     return Expanded(
@@ -33,7 +32,7 @@ class _ThirdSectionState extends State<ThirdSection> {
                         fontWeight: FontWeight.w400),
                   ),
                   Text(
-                    "$counter1",
+                    "$weight",
                     style: const TextStyle(
                         fontSize: 40,
                         fontWeight: FontWeight.w900,
@@ -43,11 +42,13 @@ class _ThirdSectionState extends State<ThirdSection> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       FloatingActionButton(
+                        splashColor: Colors.red,
+                        heroTag: "btn6",
                         backgroundColor: Colors.white.withOpacity(0.1),
                         mini: true,
                         onPressed: () {
                           setState(() {
-                            counter1--;
+                            weight--;
                           });
                         },
                         child: const Icon(
@@ -59,11 +60,13 @@ class _ThirdSectionState extends State<ThirdSection> {
                         width: 14.0,
                       ),
                       FloatingActionButton(
+                        splashColor: Colors.red,
+                        heroTag: "btn5",
                         backgroundColor: Colors.white.withOpacity(0.1),
                         mini: true,
                         onPressed: () {
                           setState(() {
-                            counter1++;
+                            weight++;
                           });
                         },
                         child: const Icon(
@@ -97,7 +100,7 @@ class _ThirdSectionState extends State<ThirdSection> {
                         fontWeight: FontWeight.w400),
                   ),
                   Text(
-                    "$counter2",
+                    "$age",
                     style: const TextStyle(
                         fontSize: 40,
                         fontWeight: FontWeight.w900,
@@ -107,11 +110,13 @@ class _ThirdSectionState extends State<ThirdSection> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       FloatingActionButton(
+                        heroTag: "btn1",
+                        splashColor: Colors.red,
                         backgroundColor: Colors.white.withOpacity(0.1),
                         mini: true,
                         onPressed: () {
                           setState(() {
-                            counter2--;
+                            age--;
                           });
                         },
                         child: const Icon(
@@ -123,11 +128,13 @@ class _ThirdSectionState extends State<ThirdSection> {
                         width: 14.0,
                       ),
                       FloatingActionButton(
+                        splashColor: Colors.red,
+                        heroTag: "btn2",
                         backgroundColor: Colors.white.withOpacity(0.1),
                         mini: true,
                         onPressed: () {
                           setState(() {
-                            counter2++;
+                            age++;
                           });
                         },
                         child: const Icon(

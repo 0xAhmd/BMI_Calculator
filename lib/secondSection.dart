@@ -1,3 +1,4 @@
+import 'package:bmi_calc/importants.dart';
 import 'package:flutter/material.dart';
 
 class secondSection extends StatefulWidget {
@@ -8,7 +9,6 @@ class secondSection extends StatefulWidget {
 }
 
 class _secondSectionState extends State<secondSection> {
-  double hieght = 180.0;
   @override
   Widget build(BuildContext context) {
     return (Expanded(
@@ -37,7 +37,7 @@ class _secondSectionState extends State<secondSection> {
               textBaseline: TextBaseline.alphabetic,
               children: [
                 Text(
-                  "${hieght.round()}",
+                  "${height.round()}",
                   style: const TextStyle(
                     color: Colors.white,
                     fontSize: 30,
@@ -56,11 +56,11 @@ class _secondSectionState extends State<secondSection> {
             ),
             Slider(
               activeColor: Colors.redAccent,
-              value: hieght,
+              value: height,
               min: 120.0,
               max: 240.0,
               // ignore: avoid_print
-              onChanged: (value) => setState(() => hieght = value),
+              onChanged: (value) => setState(() => height = value),
             ),
           ]),
         ),
